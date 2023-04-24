@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ebankImage"
+        android:layout_width="228dp"
+        android:layout_height="70dp"
+        android:background="@drawable/ebank">
+    </ImageView>
+
+
+    <TextView
+        android:id="@+id/customerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ebankImage"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif"
+        android:text="Daniel Wambua"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:textStyle="bold">
+    </TextView>
+
+    <TextView
+        android:id="@+id/ourServicesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Our Services"
+        android:fontFamily="sans-serif"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@+id/customerName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ourServicesText">
+
+        <Button
+            android:id="@+id/withdraw_btn"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:text="Withdraw Cash"
+            android:layout_margin="20dp"
+            android:textSize="18dp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:backgroundTint="#8D2196F3">
+        </Button>
+
+        <Button
+            android:id="@+id/send_money_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Send Money"
+            android:layout_margin="20dp"
+            android:textSize="18dp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:backgroundTint="#8D2196F3">
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout_1">
+
+        <Button
+            android:id="@+id/check_BL_btn"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:text="Check Balance"
+            android:layout_margin="20dp"
+            android:textSize="18dp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:backgroundTint="#8D2196F3">
+        </Button>
+
+        <Button
+            android:id="@+id/loans_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Loans And Services"
+            android:layout_margin="20dp"
+            android:textSize="18dp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:backgroundTint="#8D2196F3">
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout_2">
+
+        <Button
+            android:id="@+id/messages_btn"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:text="Messages"
+            android:layout_margin="20dp"
+            android:textSize="18dp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:backgroundTint="#8D2196F3">
+        </Button>
+
+        <Button
+            android:id="@+id/edit_profile_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Edit Profile"
+            android:layout_margin="20dp"
+            android:textSize="18dp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:backgroundTint="#8D2196F3">
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

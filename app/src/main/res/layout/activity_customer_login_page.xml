@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".customer_login_page">
+
+    <ImageView
+        android:id="@+id/ebankImage"
+        android:layout_width="228dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/ebank"></ImageView>
+
+
+    <TextView
+        android:id="@+id/Customer_login__text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ebankImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif"
+        android:text="CUSTOMER\nLOGIN"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"></TextView>
+
+    <EditText
+        android:id="@+id/customer_acc_no"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/Customer_login__text"
+        android:layout_margin="30dp"
+        android:background="@color/purple_200"
+        android:hint="ACCOUNT NUMBER"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24dp"></EditText>
+
+    <EditText
+        android:id="@+id/customer_pin_no"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/customer_acc_no"
+        android:layout_margin="30dp"
+        android:background="@color/purple_200"
+        android:hint="PIN"
+        android:inputType="numberPassword"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24dp"></EditText>
+
+    <Button
+        android:id="@+id/customer_login_btn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/customer_pin_no"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/btn_bg"
+        android:text="login"
+        android:textColor="@color/black"
+        android:textSize="24dp"></Button>
+
+    <TextView
+        android:id="@+id/register_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customer_login_btn"
+        android:gravity="center"
+        android:text="don\'t have account"
+        android:textSize="18dp">
+    </TextView>
+
+    <Button
+        android:id="@+id/customer_login_register_btn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/register_textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/white"
+        android:text="register now"
+        android:textColor="@color/black"
+        android:textSize="18dp">
+    </Button>
+
+</RelativeLayout>

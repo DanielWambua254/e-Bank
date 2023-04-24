@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OnlinrBanking">
+        <activity android:name=".delete_agent_activity"></activity>
+        <activity android:name=".delete_customer_activity" />
+        <activity android:name=".new_admin_activity" />
+        <activity android:name=".new_agent_Activity" />
+        <activity android:name=".reports_activity" />
+        <activity android:name=".admin_work_space" />
+        <activity android:name=".admin_login_activity" />
+        <activity android:name=".deposit" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity android:name=".customer_registration" />
+        <activity android:name=".agent_work_page" />
+        <activity android:name=".agent_login_Activity" />
+        <activity android:name=".customer_login_page" />
+        <activity android:name=".customer_workspace_activity" />
+        <activity android:name=".checkBalance_activity" />
+        <activity android:name=".send_money_activity" />
+        <activity android:name=".withdraw_activity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

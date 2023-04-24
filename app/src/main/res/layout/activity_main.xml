@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".customer_workspace_activity">
+
+    <ImageView
+        android:id="@+id/ebankImage"
+        android:layout_width="228dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/ebank">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/Login_welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to E bank"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/ebankImage"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
+    <TextView
+        android:id="@+id/LoginAs_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login as?"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/Login_welcome_text"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
+    <Button
+        android:id="@+id/login_as_customerBTN"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LoginAs_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_bg"
+        android:text="CUSTOMER"
+        android:textSize="24dp"></Button>
+
+    <Button
+        android:id="@+id/login_as_agentBTN"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_as_customerBTN"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_bg"
+        android:text="AGENT"
+        android:textSize="24dp"></Button>
+
+    <Button
+        android:id="@+id/login_as_adminBTN"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_as_agentBTN"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_bg"
+        android:text="ADMINISTRATOR"
+        android:textSize="24dp"></Button>
+
+</RelativeLayout>

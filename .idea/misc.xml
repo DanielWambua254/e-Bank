@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/BMW/AndroidStudioProjects/e Bank/app/src/main/res/layout/account_does_not_exist.xml" value="0.25" />
+        <entry key="..\:/Users/BMW/AndroidStudioProjects/e Bank/app/src/main/res/layout/activity_admin_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/BMW/AndroidStudioProjects/e Bank/app/src/main/res/layout/activity_admin_work_space.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DAN/AndroidStudioProjects/e Bank/app/src/main/res/drawable/btn_bg_white.xml" value="0.2135" />
+        <entry key="..\:/Users/DAN/AndroidStudioProjects/e Bank/app/src/main/res/layout/activity_agent_login.xml" value="0.2222222222222222" />
+        <entry key="..\:/Users/DAN/AndroidStudioProjects/e Bank/app/src/main/res/layout/activity_customer_login_page.xml" value="0.2222222222222222" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

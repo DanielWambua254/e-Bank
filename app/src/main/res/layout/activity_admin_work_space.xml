@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".admin_work_space">
+
+    <ImageView
+        android:id="@+id/ebankImage"
+        android:layout_width="228dp"
+        android:layout_height="70dp"
+        android:background="@drawable/ebank">
+    </ImageView>
+
+
+    <TextView
+        android:id="@+id/admin_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ebankImage"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif"
+        android:text="Daniel Wambua"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold">
+    </TextView>
+
+    <TextView
+        android:id="@+id/ourServicesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Our Services"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@+id/admin_Name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp">
+    </TextView>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ourServicesText"
+        android:layout_marginTop="40dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/register_NewCustomer_btn"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:text="NEW CUSTOMER"
+                android:layout_margin="20dp"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:backgroundTint="#8D2196F3"
+                tools:ignore="ButtonStyle">
+            </Button>
+
+            <Button
+                android:id="@+id/delete_customer_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="DELETE CUSTOMER"
+                android:layout_margin="20dp"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:backgroundTint="#8D2196F3">
+            </Button>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/register_newAgent_btn"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:text="NEW AGENT"
+                android:layout_margin="20dp"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:backgroundTint="#8D2196F3">
+            </Button>
+
+            <Button
+                android:id="@+id/delete_agent_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="DELETE AGENT"
+                android:layout_margin="20dp"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:backgroundTint="#8D2196F3">
+            </Button>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <Button
+                android:id="@+id/new_admin_btn"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:text="NEW ADMIN"
+                android:layout_margin="20dp"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:backgroundTint="#8D2196F3">
+            </Button>
+
+            <Button
+                android:id="@+id/reports_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="REPORTS"
+                android:layout_margin="20dp"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:backgroundTint="#8D2196F3">
+            </Button>
+        </TableRow>
+
+    </TableLayout>
+
+
+    <!--    <LinearLayout-->
+<!--        android:id="@+id/LinearLayout_1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/ourServicesText">-->
+
+
+
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/linearLayout_2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/LinearLayout_1">-->
+
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/LinearLayout_3"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/linearLayout_2">-->
+
+
+<!--    </LinearLayout>-->
+
+</RelativeLayout>

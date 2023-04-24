@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".reports_activity">
+
+    <ImageView
+        android:id="@+id/ebankImage"
+        android:layout_width="228dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/ebank">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/reports_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADMINISTRATOR\nREPORTS"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/ebankImage"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
+    <Button
+        android:id="@+id/number_of_agents_btn"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/reports_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/btn_bg"
+        android:text="our agents"
+        android:textColor="@color/black"
+        android:textSize="24dp"></Button>
+
+    <Button
+        android:id="@+id/number_of_customers_btn"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/number_of_agents_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/btn_bg"
+        android:text="OUR CUSTOMERS"
+        android:textColor="@color/black"
+        android:textSize="24dp"></Button>
+
+    <Button
+        android:id="@+id/number_of_admins_btn"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/number_of_customers_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/btn_bg"
+        android:text=" ADMINS"
+        android:textColor="@color/black"
+        android:textSize="24dp"></Button>
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".customer_registration">
+
+    <ImageView
+        android:id="@+id/ebankImage"
+        android:layout_width="228dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/ebank">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/customer_registration_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CUSTOMER\nREGISTRATION"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/ebankImage"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
+    <EditText
+        android:id="@+id/customer_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="CUSTOMER NAME"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:layout_margin="25dp"
+        android:background="@color/purple_200"
+        android:inputType="text"
+        android:layout_below="@id/customer_registration_text">
+    </EditText>
+
+    <EditText
+        android:id="@+id/customer_account"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="ACCOUNT NUMBER"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:layout_margin="25dp"
+        android:background="@color/purple_200"
+        android:inputType="text"
+        android:layout_below="@id/customer_name">
+    </EditText>
+
+    <EditText
+        android:id="@+id/customer_pin_1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="PIN"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:layout_margin="30dp"
+        android:background="@color/purple_200"
+        android:inputType="numberPassword"
+        android:layout_below="@id/customer_account">
+    </EditText>
+
+    <EditText
+        android:id="@+id/customer_pin_2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="RETYPE PIN"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:layout_margin="30dp"
+        android:background="@color/purple_200"
+        android:inputType="numberPassword"
+        android:layout_below="@id/customer_pin_1">
+    </EditText>
+
+    <Button
+        android:id="@+id/customer_register_btn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/customer_pin_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/btn_bg"
+        android:text="REGISTER"
+        android:textColor="@color/black"
+        android:textSize="24dp"></Button>
+
+</RelativeLayout>

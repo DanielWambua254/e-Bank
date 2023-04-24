@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".deposit">
+
+    <ImageView
+        android:id="@+id/ebankImage"
+        android:layout_width="228dp"
+        android:layout_height="70dp"
+        android:background="@drawable/ebank">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/agentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ebankImage"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif"
+        android:text="Daniel Wambua"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:textStyle="bold">
+    </TextView>
+
+    <TextView
+        android:id="@+id/depositCashText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DEPOSIT CASH"
+        android:fontFamily="sans-serif"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@+id/agentName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/deposit_ACC_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTER ACCOUNT NUMBER"
+        android:fontFamily="sans-serif"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/depositCashText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/deposit_Account_number"
+        android:layout_below="@+id/deposit_ACC_Text"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="18dp"
+        android:background="#66BB86FC"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="ACCOUNT NUMBER"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black">
+    </EditText>
+
+    <TextView
+        android:id="@+id/AMOUNT_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTER AMOUNT"
+        android:fontFamily="sans-serif"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/deposit_Account_number"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/deposit_amount"
+        android:layout_below="@+id/AMOUNT_Text"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="18dp"
+        android:background="#9ABB86FC"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="AMOUNT"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black">
+    </EditText>
+
+    <TextView
+        android:id="@+id/agent_pinText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PIN"
+        android:fontFamily="sans-serif"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/deposit_amount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/agent_pin_entry"
+        android:layout_below="@+id/agent_pinText"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="18dp"
+        android:background="#9ABB86FC"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="PIN"
+        android:inputType="numberPassword"
+        android:textAlignment="center"
+        android:textColor="@color/white">
+    </EditText>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sendDeposit"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/agent_pin_entry"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_bg"
+        android:text="SEND"
+        android:textColor="@color/white"
+        android:textSize="20dp"></com.google.android.material.button.MaterialButton>
+
+
+</RelativeLayout>
